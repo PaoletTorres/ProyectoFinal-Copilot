@@ -60,7 +60,16 @@ import org.springframework.data.mongodb.core.mapping.Document;
  * - Getters y setters para todos los campos.
  * - Método toString().
  */
-**acción:** Acepte el autocompletado al momento de ejecutar el @Document, con tab 
+**acción:** Acepte el autocompletado al momento de ejecutar el @Document, con tab. 
+
+## Prompt 4: Generar ReporteEstudianteProcessor 
+**prompt:** Necesito que en este archivo creas una nueva instancia de EstudianteReporte.
+Copia los valores de nombre, grupo y promedio desde el objeto estudiante.
+Valida el umbral: Asigna el estado "APROBADO" si el promedio es estrictamente mayor o igual a 70 (promedio >= 70).
+Asigna el estado "REPROBADO" si el promedio es menor a 70. 
+Devuelve el objeto EstudianteReporte generado. 
+ Loguea "Step 2 - Reporte: {reporte}" y devuelve el reporte. solo agrega este última instrucción ya que no está. 
+**acción:** En este paso decidí no acpetar el autocompletado e hice el prompt ahora en el chat, donde tuve que indicar ya que le faltaba. 
 
 
 
