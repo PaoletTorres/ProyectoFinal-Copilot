@@ -40,4 +40,23 @@ importante no olvides incluir el bloque <parent> correspondiente a Spring Boot 3
  */ 
  **acción:** Una vez que iba escribiendo la primera linea de código le di tab para ir aceptando el autocompletado, revisando las especificaciones como los campos, el constructor vacío, los métodos getters - setters y al último el método toString, válidando así los 6 campos, finalmente corroborando el código, lo guardé. 
 
- ## Prompt 3:  
+ ## Prompt 3: Generar estudianteReporte (MongoDB)
+ **prompt:** En este paso antes de solicitar el prompt coloqué los imports correspondientes a mongo para que no existiera la confución con jakarta.  
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mapping.context.MappingContext;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+/**
+ * Realiza en el siguiente archivo EstudianteReporte cumpliendo con los siguientes requisitos de campos:
+ * - id (String, anotado con @Id de Spring Data)
+ * - nombre (String)
+ * - grupo (String)
+ * - promedio (double)
+ * - estado (String)
+ * 
+ * Requisitos de métodos:
+ * - Constructor vacío explícito.
+ * - Getters y setters para todos los campos.
+ * - Método toString().
+ */
