@@ -60,3 +60,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
  * - Getters y setters para todos los campos.
  * - Método toString().
  */
+**acción:** Acepte el autocompletado al momento de ejecutar el @Document, con tab 
+
+
+
+
