@@ -103,6 +103,27 @@ En el siguiente archivo genera una clase @Configuration de Spring Batch (Spring 
 // promedio; getters y setters.
 **acción:** se ejecuta mediante chat 
 
+## Prompt 8: EstudianteService
+**prompt:** Crea lo siguiente: 
+// @Service con inyeccion por constructor de EstudianteRepository.
+// Metodo contarAprobados() que devuelve cuantos estudiantes tienen promedio >= 70,
+// usando findAll() y un stream con filter y count. 
+**acción:** Se ejecuta por medio del chat. 
+
+## Prompt 9: Estudiante Controller
+**prompt:** Genera lo siguiente en este archivo: 
+Genera un @RestController en /api/estudiantes que use
+EstudianteRepository y EstudianteService (inyectados por constructor) con: GET / (listar todos), GET /{id}
+(200 o 404), GET /aprobados/total (devuelve un Map con el conteo del servicio), POST / (crea, 201 Created),
+PUT /{id} (reemplaza, 200 o 404), PATCH /{id} (cambia solo el grupo desde un Map, 200 o 404), DELETE /{id}
+(204 o 404). Usa ResponseEntity para los codigos de respuesta.
+**acción:** mediante chat copilot.  
+
+## Prompt 10: RestController
+**prompt:**  //@RestController en /api/reportes que usa ReporteRepository:
+ // GET / lista todos los reportes; GET /estado/{estado} devuelve los que tengan ese estado
+// (convertido a mayusculas) usando findByEstado. 
+**acción:** ejecución mediante chat. 
 
 
 
