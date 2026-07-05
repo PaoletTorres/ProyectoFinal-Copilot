@@ -123,7 +123,16 @@ PUT /{id} (reemplaza, 200 o 404), PATCH /{id} (cambia solo el grupo desde un Map
 **prompt:**  //@RestController en /api/reportes que usa ReporteRepository:
  // GET / lista todos los reportes; GET /estado/{estado} devuelve los que tengan ese estado
 // (convertido a mayusculas) usando findByEstado. 
-**acción:** ejecución mediante chat. 
+**acción:** ejecución mediante chat.  
+
+## Prompt 11: Prompt malo
+**prompt:** haz un método de reporbados 
+**acción:** se genera pero no es viable. 
+
+## Prompt 12: Prompt bueno
+**prompt:** genera un método contarReprobados() que devuelva un long con la cantidad de
+estudiantes cuyo promedio sea menor a 70, usando findAll() y Stream API (filter + count), igual en estilo que contarAprobados().
+**acción:** generado via chat. 
 
 
 
