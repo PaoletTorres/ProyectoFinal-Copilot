@@ -1,0 +1,4 @@
+com\academia\AppTest.class
+com\academia\batch\processor\EstudianteProcessorTest.class
+com\academia\batch\processor\ReporteEstudianteProcessorTest.class
+com\academia\batch\service\EstudianteServiceTest.class
