@@ -1,7 +1,5 @@
 package com.academia.batch.model;
 
-package com.academia.batch.model;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mapping.context.MappingContext;
 import org.springframework.data.mongodb.core.mapping.Document;

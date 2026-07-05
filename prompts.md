@@ -70,6 +70,31 @@ Asigna el estado "REPROBADO" si el promedio es menor a 70.
 Devuelve el objeto EstudianteReporte generado. 
  Loguea "Step 2 - Reporte: {reporte}" y devuelve el reporte. solo agrega este última instrucción ya que no está. 
 **acción:** En este paso decidí no acpetar el autocompletado e hice el prompt ahora en el chat, donde tuve que indicar ya que le faltaba. 
+Revisando la condicón como se le indicó en el prompt respeto y si declaro <= a 70. 
+
+# Prompt 5: Generar BatchConfig 
+**prompt:** En este prompt no seguí el del ejemplo y estrcuture uno distinto: 
+En el siguiente archivo genera una clase @Configuration de Spring Batch (Spring Boot 3.2) llamada BatchConfig en el paquete com.academia.batch.config con los siguientes requisitos estrictos de Spring Batch 5:
+
+1. Inyecta mediante constructor el JobRepository y el PlatformTransactionManager (necesarios para la API de Spring Batch 5), además de DataSource para SQL y MongoTemplate para NoSQL.
+2. Step 1 llamado "paso1":
+   - Usa FlatFileItemReader para leer "estudiantes.csv" desde el classpath (delimitado, saltando 1 línea, columnas: nombre, grupo, nota1, nota2, nota3; targetType: com.academia.batch.model.Estudiante).
+   - Procesa con EstudianteProcessor (inyéctalo como bean o parámetro).
+   - Escribe en MySQL con JdbcBatchItemWriter usando la query INSERT INTO estudiantes_procesados (nombre, grupo, nota1, nota2, nota3, promedio) VALUES (:nombre, :grupo, :nota1, :nota2, :nota3, :promedio) usando beanMapped.
+   - Configura un chunk de 3.
+3. Step 2 llamado "paso2":
+   - Usa JdbcCursorItemReader para hacer un SELECT nombre, grupo, promedio FROM estudiantes_procesados.
+   - Procesa con ReporteEstudianteProcessor (inyéctalo como bean o parámetro).
+   - Escribe en MongoDB con MongoItemWriter apuntando a la colección "reportes_estudiantes".
+   - Configura un chunk de 3.
+4. Un Job llamado "procesarCalificacionesJob":
+   - Configura RunIdIncrementer.
+   - Ejecuta "paso1" y luego "paso2".
+   - Usa la API de Spring Batch 5 (new JobBuilder("procesarCalificacionesJob", jobRepository)... y new StepBuilder(..., jobRepository)...). NO utilices StepBuilderFactory ni JobBuilderFactory bajo ninguna circunstancia.
+**acción:** Se realizó la consulta mediante chat y revisando el código tuvo dos errores el primero fue en línea 80, donde aquí fue all cocatenar no tenia los espacios entre el promedio y VALUES, porque las hubiera juntado y existia el error de sintaxis, el segundo error fue en la línea 112 no se había declarado build, como en todos los bean. 
+
+## Prompt 6: 
+
 
 
 
