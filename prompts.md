@@ -96,6 +96,13 @@ En el siguiente archivo genera una clase @Configuration de Spring Batch (Spring 
 ## Prompt 6: Clase de arranque
 **prompt:** Sólo seguí el autocompletado, donde se fuerón escribiendo las sugerencias cuando iba escribiendo tanto los import como @SpringBoot para terminar de declrar el méotod de arranque.  
 
+## Prompt 7: API REST 
+**prompt:** Crea lo siguiente: 
+// Entidad JPA (@Entity, @Table name="estudiantes_procesados") que mapea la tabla existente.
+// id Long con @Id y @GeneratedValue(IDENTITY); campos nombre, grupo, nota1, nota2, nota3,
+// promedio; getters y setters.
+**acción:** se ejecuta mediante chat 
+
 
 
 
