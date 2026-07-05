@@ -93,7 +93,10 @@ En el siguiente archivo genera una clase @Configuration de Spring Batch (Spring 
    - Usa la API de Spring Batch 5 (new JobBuilder("procesarCalificacionesJob", jobRepository)... y new StepBuilder(..., jobRepository)...). NO utilices StepBuilderFactory ni JobBuilderFactory bajo ninguna circunstancia.
 **acción:** Se realizó la consulta mediante chat y revisando el código tuvo dos errores el primero fue en línea 80, donde aquí fue all cocatenar no tenia los espacios entre el promedio y VALUES, porque las hubiera juntado y existia el error de sintaxis, el segundo error fue en la línea 112 no se había declarado build, como en todos los bean. 
 
-## Prompt 6: 
+## Prompt 6: Clase de arranque
+**prompt:** Sólo seguí el autocompletado, donde se fuerón escribiendo las sugerencias cuando iba escribiendo tanto los import como @SpringBoot para terminar de declrar el méotod de arranque.  
+
+
 
 
 

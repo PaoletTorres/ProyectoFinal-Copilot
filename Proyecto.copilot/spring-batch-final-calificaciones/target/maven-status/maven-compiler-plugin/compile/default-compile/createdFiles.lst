@@ -1,1 +1,6 @@
+com\academia\batch\model\Estudiante.class
 com\academia\App.class
+com\academia\batch\config\BatchConfig.class
+com\academia\batch\model\EstudianteReporte.class
+com\academia\batch\processor\EstudianteProcessor.class
+com\academia\batch\processor\ReporteEstudianteProcessor.class
