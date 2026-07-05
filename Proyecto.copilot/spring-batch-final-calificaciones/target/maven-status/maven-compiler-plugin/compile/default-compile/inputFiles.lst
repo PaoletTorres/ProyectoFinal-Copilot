@@ -1,7 +1,13 @@
 C:\Users\HP\Desktop\ProyectoFinal-Copilot\Proyecto.copilot\spring-batch-final-calificaciones\src\main\java\com\academia\batch\model\Estudiante.java
-C:\Users\HP\Desktop\ProyectoFinal-Copilot\Proyecto.copilot\spring-batch-final-calificaciones\src\main\java\com\academia\batch\model\EstudianteReporte.java
-C:\Users\HP\Desktop\ProyectoFinal-Copilot\Proyecto.copilot\spring-batch-final-calificaciones\src\main\java\com\academia\batch\config\BatchConfig.java
+C:\Users\HP\Desktop\ProyectoFinal-Copilot\Proyecto.copilot\spring-batch-final-calificaciones\src\main\java\com\academia\batch\repository\ReporteRepository.java
 C:\Users\HP\Desktop\ProyectoFinal-Copilot\Proyecto.copilot\spring-batch-final-calificaciones\src\main\java\com\academia\App.java
-C:\Users\HP\Desktop\ProyectoFinal-Copilot\Proyecto.copilot\spring-batch-final-calificaciones\src\main\java\com\academia\batch\processor\ReporteEstudianteProcessor.java
 C:\Users\HP\Desktop\ProyectoFinal-Copilot\Proyecto.copilot\spring-batch-final-calificaciones\src\main\java\com\academia\batch\SpringBatchApplication.java
 C:\Users\HP\Desktop\ProyectoFinal-Copilot\Proyecto.copilot\spring-batch-final-calificaciones\src\main\java\com\academia\batch\processor\EstudianteProcessor.java
+C:\Users\HP\Desktop\ProyectoFinal-Copilot\Proyecto.copilot\spring-batch-final-calificaciones\src\main\java\com\academia\batch\controller\ReporteController.java
+C:\Users\HP\Desktop\ProyectoFinal-Copilot\Proyecto.copilot\spring-batch-final-calificaciones\src\main\java\com\academia\batch\model\EstudianteReporte.java
+C:\Users\HP\Desktop\ProyectoFinal-Copilot\Proyecto.copilot\spring-batch-final-calificaciones\src\main\java\com\academia\batch\config\BatchConfig.java
+C:\Users\HP\Desktop\ProyectoFinal-Copilot\Proyecto.copilot\spring-batch-final-calificaciones\src\main\java\com\academia\batch\controller\EstudianteController.java
+C:\Users\HP\Desktop\ProyectoFinal-Copilot\Proyecto.copilot\spring-batch-final-calificaciones\src\main\java\com\academia\batch\repository\EstudianteRepository.java
+C:\Users\HP\Desktop\ProyectoFinal-Copilot\Proyecto.copilot\spring-batch-final-calificaciones\src\main\java\com\academia\batch\service\EstudianteService.java
+C:\Users\HP\Desktop\ProyectoFinal-Copilot\Proyecto.copilot\spring-batch-final-calificaciones\src\main\java\com\academia\batch\processor\ReporteEstudianteProcessor.java
+C:\Users\HP\Desktop\ProyectoFinal-Copilot\Proyecto.copilot\spring-batch-final-calificaciones\src\main\java\com\academia\batch\repository\EstudianteEntity.java
